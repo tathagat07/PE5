@@ -8,16 +8,17 @@ import java.util.Map;
 public class workingWithMaps {
 
         public String checkFrequency(String input) {
-    if (input == null) return null;
-    List<String> stringList = Arrays.asList(input.split("[\\W_]+"));
-    Map<String, Integer> map = new HashMap<>();
-    for (String each : stringList) {
-        if (map.containsKey(each)) {
-            map.replace(each, map.get(each) + 1);
-        } else {
-            map.put(each, 1);
+            if (input == null) return null;
+            List<String> stringList = Arrays.asList(input.split("[\\W_]+"));
+            Map<String, Integer> map = new HashMap<>();
+            for (String each : stringList) {
+            if (map.containsKey(each)) {
+                map.replace(each, map.get(each) + 1);
+            } else {
+                map.put(each, 1);
+            }
+
         }
-    }
     return map.toString();
 }
 }

@@ -16,12 +16,12 @@ public class workingWithMapsTest {
     }
 
     @AfterClass
-    public static void tearDown() throws Exception {
+    public static void tearDown()  {
         workingWithMaps = null;
     }
 
     @Test
-    public void testWorkingWithMaps() throws Exception{
+    public void testWorkingWithMaps(){
             String expected="{one=5, two=2, three=2}";
             String actual=workingWithMaps.checkFrequency("one one -one___two,,three,one @three*one?two");
             assertEquals(expected,actual);
