@@ -4,8 +4,7 @@ import java.util.Map;
 
 public class modifyMapElement {
 
-    public String switchValue(Map<String, String> map) {
-
+    public String switchValue(Map<String, String> map){
         if (map == null) {
             return null;
         }

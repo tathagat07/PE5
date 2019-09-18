@@ -18,7 +18,8 @@ public class checkCharectorOccurance {
             }else{
                 map.put(each,1);
             }
-        }Map<String,Boolean> booleanMap=new HashMap<>();
+        }
+        Map <String,Boolean> booleanMap = new HashMap<>();
         for(String each:map.keySet()){
             if(map.get(each)>=2){
                 booleanMap.put(each,true);
